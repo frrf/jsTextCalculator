@@ -6,13 +6,17 @@ const second = document.getElementById("second")
 const submit = document.getElementById("submit")
 const result = document.getElementById("result")
 
+first.addEventListener('input', compute);
+operator.addEventListener('input', compute);
+second.addEventListener('input', compute);
+
 
 function compute() {
-  num1 = numberList.indexOf(first.value)
-  num2 = numberList.indexOf(second.value)
-  console.log(operator.value)
-
-  result.textContent = eval(num1 + operator.value + num2)
+  num1 = numberList.indexOf(first.value.toLowerCase())
+  num2 = numberList.indexOf(second.value.toLowerCase())
+  if (num1 === -1 || num2 === -1) {
+    result.textContent = "Missing field"
+  } else {
+      result.textContent = eval(num1 + operator.value + num2)
+  }
 }
-
-submit.addEventListener("click", compute)

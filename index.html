@@ -10,8 +10,10 @@
 <body>
   <main class="section-divide center" >
     <div class="grid-wrapper">
+      <h1>Enter numbers as a string</h1>
+      <h2><i>ex: five, forty-five</i></h2>
       <form action="" id="calculator">
-        <input type="text" name="" id="first">
+        <input type="text" placeholder="First number" id="first">
         <select name="" id="operator" form="calculator">
           <option selected disabled hidden>Select an Operator</option>
           <option value="+">+</option>
@@ -19,10 +21,9 @@
           <option value="/">/</option>
           <option value="*">X</option>
         </select>
-        <input type="text" name="" id="second">
-        <input type="button" value="submit" id="submit">
+        <input type="text" placeholder="Second number" id="second">
       </form>
-      <h1 id="result">Result Placeholder</h1>
+      <h1 id="result">Result</h1>
   </main>
 
 <script src="app.js"></script>
