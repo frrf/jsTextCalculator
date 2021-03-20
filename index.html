@@ -8,7 +8,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>hello world</h1>
+  <main class="section-divide center" >
+    <div class="grid-wrapper">
+      <form action="" id="calculator">
+        <input type="text" name="" id="first">
+        <select name="" id="operator" form="calculator">
+          <option selected disabled hidden>Select an Operator</option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">X</option>
+        </select>
+        <input type="text" name="" id="second">
+        <input type="button" value="submit" id="submit">
+      </form>
+      <h1 id="result">Result Placeholder</h1>
+  </main>
 
 <script src="app.js"></script>
 </body>
